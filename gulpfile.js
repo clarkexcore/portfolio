@@ -31,8 +31,8 @@ gulp.task('scripts', () => {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./dev/scripts/*.js', ['scripts']);
-  gulp.watch('./dev/styles/*.scss', ['styles']);
+  gulp.watch('./dev/scripts/**/*.js', ['scripts']);
+  gulp.watch('./dev/styles/**/*.scss', ['styles']);
   gulp.watch('*.html', reload);
 });
 

@@ -131,6 +131,102 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto; }
+header {
+  background-image: radial-gradient(#e0001a, #960011); }
+  header .header-background {
+    padding: 55px 55px;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url(../../../images/circuit-background.png);
+    background-position: center; }
+  header .name-title {
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+  header span {
+    display: block;
+    margin-top: -45px; }
+  header h1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 115px; }
+    header h1 span {
+      text-transform: uppercase; }
+  header h2 {
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    font-size: 40px; }
+  header .fa-chevron-down {
+    font-size: 35px; }
+
+nav {
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+  nav .fa-bars {
+    font-size: 35px; }
+
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  position: fixed;
+  background-color: white;
+  padding: 20px 15px;
+  top: 0;
+  bottom: 0;
+  right: -200px; }
+  .nav-bar li {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px; }
+    .nav-bar li img {
+      border-radius: 200px;
+      border: 2px solid black; }
+  .nav-bar .nav-bar_close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px; }
+
+.max-width {
+  max-width: 1400px; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+h1 {
+  margin: 0; }
+
+h2 {
+  margin: 0; }
+
+ul {
+  margin: 0; }
+  ul li {
+    list-style: none;
+    padding: none; }
+
+.skill-card .skill-card_icon {
+  font-size: 100px; }

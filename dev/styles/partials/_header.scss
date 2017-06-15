@@ -1,0 +1,75 @@
+//Header Styling
+header{
+	background-image: radial-gradient($coolRed, $darkRed);
+	.header-background{
+	padding: 55px 55px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url(../../../images/circuit-background.png);
+	background-position: center;
+	}
+	.name-title{
+		align-self: flex-start;
+	}
+	span{
+		display: block;
+		margin-top: -45px;
+	}
+	h1{
+		color: white;
+		font-family: $titleFont;
+		font-size: 115px;
+		// letter-spacing: 1px;
+		span{
+			text-transform: uppercase;
+		}
+	}
+	h2{
+		font-family: $baseFont;
+		text-transform: uppercase;
+		font-size: 40px;
+	}
+	.fa-chevron-down{
+		font-size: 35px;
+	}
+}
+
+nav{
+	align-self: flex-end;
+	.fa-bars{
+		font-size: 35px;
+	}
+}
+.nav-bar{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 200px;
+	position: fixed;
+	background-color: white;
+	padding: 20px 15px;
+	top: 0;
+	bottom: 0;
+	right: -200px;
+	li{
+		font-family: $baseFont;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 15px;
+		img{
+			border-radius: 200px;
+			border: 2px solid black;
+		}
+	}
+	.nav-bar_close{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		font-size: 24px;
+	}
+}
+

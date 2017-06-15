@@ -1,6 +1,36 @@
-@import 'setup';
+@import 'partials/setup';
+@import 'partials/variables';
+@import 'partials/header';
 
-.container {
-	max-width: 900px;
-	margin: 0 auto;
+//General Styling
+
+.max-width{
+	max-width: 1400px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+h1{
+	margin:0
+}
+
+h2{
+	margin: 0;
+}
+
+ul{
+	margin: 0;
+	li{
+		list-style: none;
+		padding: none;
+	}
+}
+
+.skill-card{
+	.skill-card_icon{
+		font-size: 100px;
+	}
 }
