@@ -132,7 +132,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 header {
-  background-image: radial-gradient(#e0001a, #960011); }
+  background-color: #ba0015; }
   header .header-background {
     padding: 55px 55px;
     height: 100vh;
@@ -150,7 +150,8 @@ header {
         -ms-flex-align: center;
             align-items: center;
     background-image: url(../../../images/circuit-background.png);
-    background-position: center; }
+    background-position: center;
+    background-attachment: fixed; }
   header .name-title {
     -ms-flex-item-align: start;
         align-self: flex-start; }
@@ -160,21 +161,38 @@ header {
   header h1 {
     color: white;
     font-family: "Montserrat", sans-serif;
-    font-size: 115px; }
-    header h1 span {
-      text-transform: uppercase; }
+    font-size: 115px;
+    text-transform: uppercase; }
   header h2 {
     font-family: "Source Sans Pro", sans-serif;
     text-transform: uppercase;
     font-size: 40px; }
   header .fa-chevron-down {
     font-size: 35px; }
+    header .fa-chevron-down:hover {
+      color: white;
+      text-decoration: underline; }
 
 nav {
   -ms-flex-item-align: end;
       align-self: flex-end; }
-  nav .fa-bars {
-    font-size: 35px; }
+  nav .nav-hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    nav .nav-hamburger p {
+      margin: 0;
+      margin-right: 10px;
+      font-size: 25px;
+      font-family: "Source Sans Pro", sans-serif;
+      text-transform: uppercase; }
+    nav .nav-hamburger i {
+      font-size: 35px; }
+    nav .nav-hamburger:hover {
+      color: white; }
 
 .nav-bar {
   display: -webkit-box;
@@ -209,8 +227,102 @@ nav {
     left: 10px;
     font-size: 24px; }
 
+.about-section {
+  background-image: url(../../../images/about-me-background.png); }
+  .about-section .about-section_overlay {
+    background-color: rgba(255, 255, 255, 0.7); }
+
+.about-section_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .about-section_flex .about-flex_child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 300px;
+            flex: 1 0 300px; }
+  .about-section_flex .about-flex_img {
+    margin-right: 25px; }
+    .about-section_flex .about-flex_img img {
+      border-radius: 500px;
+      -webkit-box-shadow: -10px 10px 0px 2px black;
+              box-shadow: -10px 10px 0px 2px black;
+      max-width: 100%; }
+  .about-section_flex .about-flex_text h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .about-section_flex .about-flex_text .me {
+    font-weight: 700; }
+  .about-section_flex .about-flex_text p {
+    margin-top: 25px;
+    font-famiy: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 25px; }
+
+.skills-section {
+  background-color: #d6d6d6; }
+
+.skills-section_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .skills-section_title h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+    .skills-section_title h2 .skill {
+      font-weight: 700; }
+
+.skills-area {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.skill-card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 150px;
+          flex: 1 0 150px;
+  background-color: white;
+  padding: 25px 15px;
+  text-align: center; }
+  .skill-card .skill-card_icon {
+    font-size: 100px;
+    color: #e0001a; }
+
 .max-width {
   max-width: 1400px; }
+
+.wrapper {
+  padding: 150px 0;
+  width: calc(100% - (1400px - 1120px));
+  margin: 0 auto; }
+
+.red-title-line {
+  width: 80px;
+  height: 5px;
+  background-color: #ba0015; }
 
 a {
   text-decoration: none;
@@ -227,6 +339,3 @@ ul {
   ul li {
     list-style: none;
     padding: none; }
-
-.skill-card .skill-card_icon {
-  font-size: 100px; }

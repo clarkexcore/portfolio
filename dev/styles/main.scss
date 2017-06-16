@@ -1,11 +1,25 @@
 @import 'partials/setup';
 @import 'partials/variables';
 @import 'partials/header';
+@import 'partials/about';
+@import 'partials/skills';
 
 //General Styling
 
 .max-width{
 	max-width: 1400px;
+}
+
+.wrapper{
+	padding: 150px 0;
+	width: calc(100% - (1400px - 1120px));
+	margin: 0 auto;
+}
+
+.red-title-line{
+	width: 80px;
+	height: 5px;
+	background-color: $darkRed;
 }
 
 a{
@@ -26,11 +40,5 @@ ul{
 	li{
 		list-style: none;
 		padding: none;
-	}
-}
-
-.skill-card{
-	.skill-card_icon{
-		font-size: 100px;
 	}
 }
