@@ -1,0 +1,17 @@
+.projects-section{
+	background-image: linear-gradient(to bottom, $coolGrey 10%, $darkRed);
+	.wrapper{
+		padding-top: 0;
+	}
+}
+
+.project-card_area{
+	display: flex;
+	.project-card{
+		background-color: white;
+		margin-bottom: 75px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
