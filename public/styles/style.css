@@ -276,28 +276,127 @@ nav {
     color: #e0001a; }
 
 .projects-section {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #d6d6d6), to(#ba0015));
-  background-image: linear-gradient(to bottom, #d6d6d6 10%, #ba0015); }
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #d6d6d6), to(#ba0015));
+  background-image: linear-gradient(to bottom, #d6d6d6 2%, #ba0015); }
   .projects-section .wrapper {
-    padding-top: 0; }
+    padding: 0; }
 
 .project-card_area {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .project-card_area .project-card {
-    background-color: white;
-    margin-bottom: 75px;
+    -ms-flex-preferred-size: 900px;
+        flex-basis: 900px;
+    margin-bottom: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+
+.project-card_img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  margin-right: 15px; }
+  .project-card_img img {
+    position: relative;
+    bottom: 0;
+    max-width: 100%;
+    -webkit-box-shadow: -10px 15px 25px 0px rgba(0, 0, 0, 0.8);
+            box-shadow: -10px 15px 25px 0px rgba(0, 0, 0, 0.8);
+    -webkit-transition: all 1s;
+    transition: all 1s; }
+    .project-card_img img:hover {
+      bottom: -10px;
+      -webkit-box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.8);
+              box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.8); }
+
+.inverted img {
+  position: relative;
+  bottom: 0;
+  margin-right: 0;
+  margin-left: 15px;
+  -webkit-box-shadow: 10px 15px 25px 0px rgba(0, 0, 0, 0.8);
+          box-shadow: 10px 15px 25px 0px rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+  .inverted img:hover {
+    bottom: -10px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.8);
+            box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.8); }
+
+.project-card_text {
+  padding: 25px 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(50% - 15px);
+          flex: 1 0 calc(50% - 15px); }
+  .project-card_text h3 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase; }
+  .project-card_text .title-line_small {
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 10px; }
+  .project-card_text h4 {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 16px; }
+
+ul.project-skills_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px; }
+  ul.project-skills_list li {
+    margin-right: 5px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase; }
+    ul.project-skills_list li:last-of-type {
+      margin-right: 0; }
+
+.project-card_buttons button {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+  .project-card_buttons button:hover {
+    background-color: white;
+    border: 2px solid white; }
+
+.project-card_buttons .github-button {
+  margin-right: 10px;
+  color: white;
+  background-color: black;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+  .project-card_buttons .github-button:hover {
+    border: 2px solid white;
+    background-color: white;
+    color: black; }
 
 .max-width {
   max-width: 1400px; }

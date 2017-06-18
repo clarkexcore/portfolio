@@ -1,17 +1,116 @@
 .projects-section{
-	background-image: linear-gradient(to bottom, $coolGrey 10%, $darkRed);
+	background-image: linear-gradient(to bottom, $coolGrey 2%, $darkRed);
 	.wrapper{
-		padding-top: 0;
+		padding: 0;
 	}
 }
 
 .project-card_area{
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 	.project-card{
-		background-color: white;
-		margin-bottom: 75px;
+		flex-basis: 900px;
+		margin-bottom: 200px;
 		display: flex;
-		flex-direction: column;
 		align-items: center;
+	}
+}
+
+.project-card_img{
+	flex: 1 0 50%;
+	margin-right: 15px;
+	img{
+		position: relative;
+		bottom: 0;
+		max-width: 100%;
+		box-shadow: -10px 15px 25px 0px rgba(0,0,0, 0.8);
+		transition: all 1s;
+		&:hover{
+			bottom: -10px;
+			box-shadow: -5px 5px 5px 0px rgba(0,0,0, 0.8);
+		}
+	}
+}
+
+.inverted img{
+	position: relative;
+	bottom: 0;
+	margin-right: 0;
+	margin-left: 15px;
+	box-shadow: 10px 15px 25px 0px rgba(0,0,0, 0.8);
+	transition: all 1s;
+	&:hover{
+		bottom: -10px;
+		box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.8);
+	}
+}
+
+.project-card_text{
+	padding: 25px 15px;
+	flex: 1 0 calc(50% - 15px);
+	h3{
+		margin: 0;
+		margin-bottom: 5px;
+		font-family: $titleFont;
+		text-transform: uppercase;
+	}
+	.title-line_small{
+		width: 50px;
+		height: 2px;
+		background-color: black;
+		margin-bottom: 10px;
+	}
+	h4{
+		margin: 0;
+		font-family: $titleFont;
+		font-weight: 200;
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+}
+
+ul.project-skills_list{
+	display: flex;
+	padding: 0;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	li{
+		margin-right: 5px;
+		font-size: 14px;
+		font-family: $titleFont;
+		text-transform: uppercase;
+		&:last-of-type{
+			margin-right: 0;
+		}
+	}
+}
+
+.project-card_buttons{
+	button{
+		padding: 10px 20px;
+		font-size: 20px;
+		font-family: $baseFont;
+		text-transform: uppercase;
+		color: black;
+		background-color: rgba(0,0,0,0);
+		border: 2px solid black;
+		transition: all 1s;
+		&:hover{
+			background-color: white;
+			border: 2px solid white;
+		}
+	}
+	.github-button{
+		margin-right: 10px;
+		color: white;
+		background-color: black;
+		transition: all 1s;
+		&:hover{
+			border: 2px solid white;
+			background-color: white;
+			color: black;
+		}
 	}
 }
