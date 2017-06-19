@@ -4,6 +4,8 @@
 @import 'partials/about';
 @import 'partials/skills';
 @import 'partials/projects';
+@import 'partials/social';
+@import 'partials/contact';
 
 //General Styling
 
@@ -69,5 +71,53 @@ ul{
 	li{
 		list-style: none;
 		padding: none;
+	}
+}
+
+footer{
+	padding: 15px 20px;
+	background-color: $darkRed;
+	color: white;
+	font-family: $baseFont;
+	text-align: center;
+}
+
+.dark-overlay{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0, 0.66);
+	z-index: 10;
+}
+
+.dark-overlay_on{
+	display: block;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.wrapper{
+		width: 85%;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.wrapper{
+		width: 90%;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.section-title{
+		h2{
+			font-size: 35px;
+		}
 	}
 }

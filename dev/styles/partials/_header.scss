@@ -58,13 +58,15 @@ nav{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 200px;
+	width: 300px;
 	position: fixed;
+	z-index: 20;
 	background-color: white;
 	padding: 20px 15px;
 	top: 0;
 	bottom: 0;
-	right: -200px;
+	right: -300px;
+	transition: all 1s;
 	li{
 		font-family: $baseFont;
 		font-size: 20px;
@@ -81,6 +83,43 @@ nav{
 		top: 10px;
 		left: 10px;
 		font-size: 24px;
+	}
+}
+
+.nav-bar_open{
+	right: 0;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	header{
+		.header-background{
+			background-image: none;
+		}
+		.name-title{
+			align-self: center;
+			text-align: center;
+			h1{
+				font-size: 90px;
+			}
+			span{
+				margin-top: -25px;
+			}
+		}
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	header{
+		.name-title{
+			h1{
+				font-size: 60px;
+			}
+			h2{
+				font-size: 25px;
+			}
+		}
 	}
 }
 

@@ -1,0 +1,31 @@
+.social-section{
+	.section-title{
+		margin-bottom: 100px;
+	}
+}
+.social-area{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.social-area_card{
+	i{
+		font-size: 100px;
+		transition: all 0.5s;
+	}
+	h4{
+		font-family: $titleFont;
+		font-weight: 200;
+		text-transform: uppercase;
+		transition: all 0.5s;
+	}
+	&:hover a{
+		color: $darkRed;
+		h4{
+			text-decoration: underline;
+		}
+	}
+
+}

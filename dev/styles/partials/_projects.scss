@@ -59,7 +59,7 @@
 	.title-line_small{
 		width: 50px;
 		height: 2px;
-		background-color: black;
+		background-color: white;
 		margin-bottom: 10px;
 	}
 	h4{
@@ -112,5 +112,40 @@ ul.project-skills_list{
 			background-color: white;
 			color: black;
 		}
+	}
+}
+
+//Responsive Stuff
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.project-card_area{
+		.project-card{
+			flex-basis: 100%;
+			margin-bottom: 200px;
+			flex-direction: column;
+		}
+	}
+	.project-card_img{
+		flex: 1 0 100%;
+		margin-right: 0px;
+		margin-bottom: 25px;
+		order: 0;
+		img{
+			box-shadow: -10px 15px 25px 0px rgba(0,0,0, 0.8);
+			transition: all 1s;
+			&:hover{
+				bottom: -10px;
+				box-shadow: -5px 5px 5px 0px rgba(0,0,0, 0.8);
+			}
+		}
+	}
+	.project-card_text{
+		padding: 25px 15px;
+		flex: 1 0 100%;
+		order: 1;
+	}
+	.inverted img{
+		margin-left: 0;
 	}
 }

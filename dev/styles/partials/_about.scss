@@ -10,7 +10,6 @@
 .about-section_flex{
 	display: flex;
 	align-items: center;
-	flex-wrap: wrap;
 	.about-flex_child{
 		flex: 1 0 300px;
 	}
@@ -31,3 +30,39 @@
 		}
 	}
 }
+
+
+//Responsive Stuff
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.about-section_flex{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.about-flex_child{
+			flex: 1 0 100%;
+		}
+
+		.about-flex_img{
+			order: 2;
+			margin-right: 0;
+			margin-top: 25px;
+			display: block;
+		}
+		.about-flex_text{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding-bottom: 25px;
+			h2{
+				font-size: 35px;
+			}
+			p{
+				text-align: center;
+			}
+		}
+	}
+}
+

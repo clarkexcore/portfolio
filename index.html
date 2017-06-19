@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alex Clarke</title>
 	<!-- DevIcon Link -->
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Source+Sans+Pro" rel="stylesheet">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!-- Style Sheet -->
 	<link rel="stylesheet" href="public/styles/style.css">
 </head>
@@ -54,7 +57,7 @@
 						<div class="about-flex_child about-flex_text">
 							<h2>About <span class="me">Me</span></h2>
 							<div class="red-title-line"></div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, quia quae repellendus autem ipsam omnis deleniti inventore ipsum nisi explicabo tempore iusto similique nihil saepe doloremque, natus tempora labore. Id sint reprehenderit repudiandae libero officia at quas ratione iste earum architecto, recusandae excepturi autem minima praesentium beatae nemo dicta illo optio laboriosam quibusdam impedit ducimus sit cum a! Dolorem, odit.</p>
+							<p>Hello my name is Alex Clarke and I’m a front-end web developer living in Toronto. I love working on a team because it is a great environment to learn more and bounce creative ideas around. From my past work experience I have developed great communication and problem solving skills. When I’m not working you can find me geeking out with some comic books or enjoying a program on Netflix. I plan on creating more websites, fine-tuning my coding craft, and learning more about application programming in my down time. </p>
 						</div>
 					</div>
 				</div>
@@ -255,8 +258,8 @@
 								<li>ES6</li>
 							</ul>
 							<div class="project-card_buttons">
-								<a href=""><button class="github-button">Github</button></a>
-								<a href=""><button>View Live</button></a>
+								<a href="https://github.com/wine-it-up/hy-p5" target="_blank"><button class="github-button">Github</button></a>
+								<a href="https://wine-it-up.github.io/hy-p5/" target="_blank"><button>View Live</button></a>
 							</div>
 						</div>
 						<div class="project-card_img inverted">
@@ -288,8 +291,8 @@
 								<li>Javascript</li>
 							</ul>
 							<div class="project-card_buttons">
-								<a href=""><button>Github</button></a>
-								<a href=""><button>View Live</button></a>
+								<a href="https://github.com/clarkexcore/cookbk" target="_blank"><button class="github-button">Github</button></a>
+								<a href="" target="_blank"><button>View Live</button></a>
 							</div>
 						</div>
 					</div>
@@ -305,49 +308,72 @@
 					<div class="red-title-line"></div>				
 				</div>
 				<div class="social-area">
-					<a href="https://twitter.com/clarkexcore">
-						<div class="social-area_card">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-							<h4>Twitter</h4>
-						</div>
-					</a>
-					<a href="https://medium.com/@clarkexcore">
-						<div class="social-area_card">
-							<i class="fa fa-medium" aria-hidden="true"></i>
-							<h4>Blog - Medium</h4>
-						</div>
-					</a>
-					<a href="https://github.com/clarkexcore">
-						<div class="social-area_card">
-							<i class="fa fa-github" aria-hidden="true"></i>
-							<h4>Github</h4>
-						</div>
-					</a>
-					<a href="https://www.linkedin.com/in/alex-clarke-508b6a13b/">
-						<div class="social-area_card">
-							<i class="fa fa-linkedin" aria-hidden="true"></i>
-							<h4>LinkedIn</h4>
-						</div>
-					</a>
+					<div class="social-area_card">
+						<a href="https://twitter.com/clarkexcore"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/clarkexcore"><h4>Twitter</h4></a>
+					</div>
+					<div class="social-area_card">
+						<a href="https://medium.com/@clarkexcore"><i class="fa fa-medium" aria-hidden="true"></i></a>
+						<a href="https://medium.com/@clarkexcore"><h4>Blog - Medium</h4></a>
+					</div>
+					<div class="social-area_card">
+						<a href="https://github.com/clarkexcore"><i class="fa fa-github" aria-hidden="true"></i></a>
+						<a href="https://github.com/clarkexcore"><h4>Github</h4></a>
+					</div>
+					<div class="social-area_card">
+						<a href="https://www.linkedin.com/in/alex-clarke-508b6a13b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+						<a href="https://www.linkedin.com/in/alex-clarke-508b6a13b/"><h4>LinkedIn</h4></a>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Contact Me Section -->
-		<section class="contact-section">
+		<section class="contact-section" id="contact">
 			<div class="wrapper">
-				<div class="section-title">
-					<h2>Contact <span>Me</span></h2>
-					<div class="red-title-line"></div>
-				</div>
-				<form action="">
-					<div class="text-email">
-						<input type="text" placeholder="Name">
-						<input type="email" placeholder="Email">
+				<div class="contact-section_background">
+					<div class="section-title">
+						<h2>Contact <span>Me</span></h2>
+						<div class="red-title-line"></div>
 					</div>
-					<textarea name="" id="" cols="30" rows="10"></textarea>
-					<input type="submit" value="Submit Message">
-				</form>
+					<div class="contact-area">
+						<div class="contact-info">
+							<div class="contect-info_email">
+								<h3>
+									<i class="fa fa-envelope-o" aria-hidden="true"></i>
+									<span>E-Mail</span>
+								</h3>
+								<p><a href="mailto:clarkexcore@gmail.com">clarkexcore@gmail.com</a></p>
+							</div>
+							<div class="contact-info_location">
+								<h3>
+									<i class="fa fa-map-marker" aria-hidden="true"></i>
+									<span>Location</span>
+								</h3>
+								<p>Toronto, Canada</p>
+							</div>
+						</div>
+						<form action="http://www.focuspocus.io/magic/clarkexcore@gmail.com" method="">
+							<div class="text-email">
+								<div class="form-text">
+									<label for="fullName">Name:</label>	
+									<input type="text" id="fullName" name="full-name" placeholder="Name">
+								</div>
+								<div class="form-email">
+									<label for="email">Email:</label>
+									<input type="email" id="email" name="email" placeholder="Email">
+								</div>
+							</div>
+							<label for="message">Leave me a Message:</label>
+							<textarea name="message" placeholder="Message" id="message" cols="30" rows="10"></textarea>
+							<input type="submit" value="Submit Message">
+						</form>
+					</div>
+				</div>
+				<div class="back-to-top">
+					<i class="fa fa-chevron-up" aria-hidden="true"></i>
+					<p>Back to Top</p>				
+				</div>
 			</div>
 		</section>
 
@@ -356,10 +382,14 @@
 			<p>2017 &copy; Development by Alex Clarke and design by TheGem</p>
 		</footer>
 
+		<div class="dark-overlay"></div>
+
 	</div>
 	
 	<!-- Font Awesome -->
 	<script src="https://use.fontawesome.com/863f28bd20.js"></script>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<!-- Main Script -->
 	<script src="public/scripts/app.js"></script>
 	
