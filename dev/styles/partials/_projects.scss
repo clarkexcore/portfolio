@@ -1,8 +1,6 @@
 .projects-section{
-	background-image: linear-gradient(to bottom, $coolGrey 2%, $darkRed);
-	.wrapper{
-		padding: 0;
-	}
+	// background-image: linear-gradient(to bottom, $coolGrey 2%, $darkRed);
+	background-image: url(../../../images/project-background.png);
 }
 
 .project-card_area{
@@ -15,6 +13,9 @@
 		margin-bottom: 200px;
 		display: flex;
 		align-items: center;
+		&:last-of-type{
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -50,16 +51,19 @@
 .project-card_text{
 	padding: 25px 15px;
 	flex: 1 0 calc(50% - 15px);
+	display: flex;
+	flex-direction: column;
 	h3{
 		margin: 0;
 		margin-bottom: 5px;
+		font-size: 25px;
 		font-family: $titleFont;
 		text-transform: uppercase;
 	}
 	.title-line_small{
 		width: 50px;
-		height: 2px;
-		background-color: white;
+		height: 3px;
+		background-color: $darkRed;
 		margin-bottom: 10px;
 	}
 	h4{
@@ -68,6 +72,19 @@
 		font-weight: 200;
 		text-transform: uppercase;
 		font-size: 16px;
+	}
+	p{
+		line-height: 25px;
+	}
+}
+
+.inverted-text{
+	text-align: right;
+	.title-line_small{
+		align-self: flex-end;
+	}
+	ul{
+		justify-content: flex-end;
 	}
 }
 
@@ -78,7 +95,8 @@ ul.project-skills_list{
 	margin-bottom: 20px;
 	li{
 		margin-right: 5px;
-		font-size: 14px;
+		margin-top: 5px;
+		font-size: 13px;
 		font-family: $titleFont;
 		text-transform: uppercase;
 		&:last-of-type{
@@ -93,24 +111,26 @@ ul.project-skills_list{
 		font-size: 20px;
 		font-family: $baseFont;
 		text-transform: uppercase;
-		color: black;
+		color: $darkRed;
 		background-color: rgba(0,0,0,0);
-		border: 2px solid black;
+		border: 2px solid $darkRed;
 		transition: all 1s;
 		&:hover{
-			background-color: white;
-			border: 2px solid white;
+			background-color: $darkRed;
+			border: 2px solid $darkRed;
+			color: white;
 		}
 	}
 	.github-button{
 		margin-right: 10px;
 		color: white;
 		background-color: black;
+		border: 2px solid black;
 		transition: all 1s;
 		&:hover{
-			border: 2px solid white;
-			background-color: white;
-			color: black;
+			border: 2px solid $darkRed;
+			background-color: $darkRed;
+			color: white;
 		}
 	}
 }
@@ -127,7 +147,7 @@ ul.project-skills_list{
 		}
 	}
 	.project-card_img{
-		flex: 1 0 100%;
+		flex: 1 0 auto;
 		margin-right: 0px;
 		margin-bottom: 25px;
 		order: 0;
@@ -142,10 +162,25 @@ ul.project-skills_list{
 	}
 	.project-card_text{
 		padding: 25px 15px;
-		flex: 1 0 100%;
+		flex: 1 0 auto;
 		order: 1;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		ul{
+			justify-content: center;
+		}
 	}
 	.inverted img{
 		margin-left: 0;
+	}
+	.inverted-text{
+		text-align: center;
+		.title-line_small{
+			align-self: center;
+		}
+		ul{
+			justify-content: center;
+		}
 	}
 }

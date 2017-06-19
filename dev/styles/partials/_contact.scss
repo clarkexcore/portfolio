@@ -103,6 +103,26 @@
 	}
 }
 
+.contact-info_email p a{
+	transition: all 0.5s;
+	&:hover{
+		text-decoration: underline;
+		color: $darkRed;
+	}
+}
+
+.contact-info_social p a{
+	font-size: 20px;
+	margin-right: 10px;
+	transition: all 0.5s;
+	&:last-of-type{
+		margin-right: 0;
+	}
+	&:hover{
+		color: $darkRed;
+	}
+}
+
 //Responsive Stuff
 
 /* Portrait tablet and small desktops */

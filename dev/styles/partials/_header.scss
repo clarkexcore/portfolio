@@ -26,9 +26,11 @@ header{
 		text-transform: uppercase;
 	}
 	.fa-chevron-down{
+		color: white;
 		font-size: 35px;
+		transition: all 0.5s;
 		&:hover{
-			color: white;
+			color: black;
 			text-decoration: underline;
 		}
 	}
@@ -39,18 +41,13 @@ nav{
 	.nav-hamburger{
 		display: flex;
 		align-items: center;
-		p{
-			margin: 0;
-			margin-right: 10px;
-			font-size: 25px;
-			font-family: $baseFont;
-			text-transform: uppercase;
-		}
 		i{
 			font-size: 35px;
-		}
-		&:hover{
 			color: white;
+			transition: all 0.5s;
+		}
+		&:hover i{
+			color: black;
 		}
 	}
 }
@@ -69,20 +66,28 @@ nav{
 	transition: all 1s;
 	li{
 		font-family: $baseFont;
-		font-size: 20px;
+		font-size: 35px;
 		text-transform: uppercase;
 		text-align: center;
 		margin-bottom: 15px;
 		img{
 			border-radius: 200px;
 			border: 2px solid black;
+			margin-top: 20px;
+		}
+		&:hover a{
+			border-bottom: 3px solid $darkRed;
 		}
 	}
 	.nav-bar_close{
 		position: absolute;
 		top: 10px;
 		left: 10px;
-		font-size: 24px;
+		font-size: 35px;
+		transition: all 0.5s;
+		&:hover{
+			color: $darkRed;
+		}
 	}
 }
 
@@ -120,6 +125,25 @@ nav{
 				font-size: 25px;
 			}
 		}
+	}
+	.nav-bar{;
+		right: -480px;
+		width: 100%;
+		justify-content: flex-end;
+		li{
+			font-size: 30px;
+		}
+		.nav-bar_close{
+			top: 20px;
+			left: 20px;
+			font-size: 40px;
+		}
+	}
+	.nav-bar_open{
+		right: 0;
+		top: 0;
+		left: 0;
+		bottom: 0;
 	}
 }
 

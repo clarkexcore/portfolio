@@ -164,9 +164,12 @@ header {
     font-size: 115px;
     text-transform: uppercase; }
   header .fa-chevron-down {
-    font-size: 35px; }
+    color: white;
+    font-size: 35px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
     header .fa-chevron-down:hover {
-      color: white;
+      color: black;
       text-decoration: underline; }
 
 nav {
@@ -179,16 +182,13 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    nav .nav-hamburger p {
-      margin: 0;
-      margin-right: 10px;
-      font-size: 25px;
-      font-family: "Source Sans Pro", sans-serif;
-      text-transform: uppercase; }
     nav .nav-hamburger i {
-      font-size: 35px; }
-    nav .nav-hamburger:hover {
-      color: white; }
+      font-size: 35px;
+      color: white;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+    nav .nav-hamburger:hover i {
+      color: black; }
 
 .nav-bar {
   display: -webkit-box;
@@ -213,18 +213,25 @@ nav {
   transition: all 1s; }
   .nav-bar li {
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 20px;
+    font-size: 35px;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 15px; }
     .nav-bar li img {
       border-radius: 200px;
-      border: 2px solid black; }
+      border: 2px solid black;
+      margin-top: 20px; }
+    .nav-bar li:hover a {
+      border-bottom: 3px solid #ba0015; }
   .nav-bar .nav-bar_close {
     position: absolute;
     top: 10px;
     left: 10px;
-    font-size: 24px; }
+    font-size: 35px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    .nav-bar .nav-bar_close:hover {
+      color: #ba0015; }
 
 .nav-bar_open {
   right: 0; }
@@ -247,7 +254,24 @@ nav {
   header .name-title h1 {
     font-size: 60px; }
   header .name-title h2 {
-    font-size: 25px; } }
+    font-size: 25px; }
+  .nav-bar {
+    right: -480px;
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .nav-bar li {
+      font-size: 30px; }
+    .nav-bar .nav-bar_close {
+      top: 20px;
+      left: 20px;
+      font-size: 40px; }
+  .nav-bar_open {
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0; } }
 
 .about-section {
   background-image: url(../../../images/about-me-background.png); }
@@ -293,8 +317,8 @@ nav {
             align-items: center; }
     .about-section_flex .about-flex_child {
       -webkit-box-flex: 1;
-          -ms-flex: 1 0 100%;
-              flex: 1 0 100%; }
+          -ms-flex: 1 0 auto;
+              flex: 1 0 auto; }
     .about-section_flex .about-flex_img {
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
@@ -323,7 +347,7 @@ nav {
         text-align: center; } }
 
 .skills-section {
-  background-color: #d6d6d6; }
+  background-color: #efefef; }
 
 .skills-area {
   display: -webkit-box;
@@ -336,7 +360,6 @@ nav {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 150px;
           flex: 1 0 150px;
-  background-color: white;
   padding: 25px 15px;
   text-align: center; }
   .skill-card .skill-card_icon {
@@ -344,10 +367,7 @@ nav {
     color: #e0001a; }
 
 .projects-section {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #d6d6d6), to(#ba0015));
-  background-image: linear-gradient(to bottom, #d6d6d6 2%, #ba0015); }
-  .projects-section .wrapper {
-    padding: 0; }
+  background-image: url(../../../images/project-background.png); }
 
 .project-card_area {
   display: -webkit-box;
@@ -370,6 +390,8 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .project-card_area .project-card:last-of-type {
+      margin-bottom: 0; }
 
 .project-card_img {
   -webkit-box-flex: 1;
@@ -407,16 +429,24 @@ nav {
   padding: 25px 15px;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 calc(50% - 15px);
-          flex: 1 0 calc(50% - 15px); }
+          flex: 1 0 calc(50% - 15px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .project-card_text h3 {
     margin: 0;
     margin-bottom: 5px;
+    font-size: 25px;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase; }
   .project-card_text .title-line_small {
     width: 50px;
-    height: 2px;
-    background-color: white;
+    height: 3px;
+    background-color: #ba0015;
     margin-bottom: 10px; }
   .project-card_text h4 {
     margin: 0;
@@ -424,6 +454,18 @@ nav {
     font-weight: 200;
     text-transform: uppercase;
     font-size: 16px; }
+  .project-card_text p {
+    line-height: 25px; }
+
+.inverted-text {
+  text-align: right; }
+  .inverted-text .title-line_small {
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+  .inverted-text ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
 
 ul.project-skills_list {
   display: -webkit-box;
@@ -435,7 +477,8 @@ ul.project-skills_list {
   margin-bottom: 20px; }
   ul.project-skills_list li {
     margin-right: 5px;
-    font-size: 14px;
+    margin-top: 5px;
+    font-size: 13px;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase; }
     ul.project-skills_list li:last-of-type {
@@ -446,25 +489,27 @@ ul.project-skills_list {
   font-size: 20px;
   font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
-  color: black;
+  color: #ba0015;
   background-color: transparent;
-  border: 2px solid black;
+  border: 2px solid #ba0015;
   -webkit-transition: all 1s;
   transition: all 1s; }
   .project-card_buttons button:hover {
-    background-color: white;
-    border: 2px solid white; }
+    background-color: #ba0015;
+    border: 2px solid #ba0015;
+    color: white; }
 
 .project-card_buttons .github-button {
   margin-right: 10px;
   color: white;
   background-color: black;
+  border: 2px solid black;
   -webkit-transition: all 1s;
   transition: all 1s; }
   .project-card_buttons .github-button:hover {
-    border: 2px solid white;
-    background-color: white;
-    color: black; }
+    border: 2px solid #ba0015;
+    background-color: #ba0015;
+    color: white; }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -478,8 +523,8 @@ ul.project-skills_list {
             flex-direction: column; }
   .project-card_img {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 100%;
-            flex: 1 0 100%;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
     margin-right: 0px;
     margin-bottom: 25px;
     -webkit-box-ordinal-group: 1;
@@ -497,44 +542,33 @@ ul.project-skills_list {
   .project-card_text {
     padding: 25px 15px;
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 100%;
-            flex: 1 0 100%;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
-            order: 1; }
+            order: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+    .project-card_text ul {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
   .inverted img {
-    margin-left: 0; } }
-
-.social-section .section-title {
-  margin-bottom: 100px; }
-
-.social-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.social-area_card i {
-  font-size: 100px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
-
-.social-area_card h4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
-  text-transform: uppercase;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
-
-.social-area_card:hover a {
-  color: #ba0015; }
-  .social-area_card:hover a h4 {
-    text-decoration: underline; }
+    margin-left: 0; }
+  .inverted-text {
+    text-align: center; }
+    .inverted-text .title-line_small {
+      -ms-flex-item-align: center;
+          align-self: center; }
+    .inverted-text ul {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .contact-section {
   background-image: url(../../../images/map.jpg);
@@ -630,6 +664,23 @@ ul.project-skills_list {
       .contact-area form input[type=submit]:hover {
         background-color: #ba0015;
         color: white; }
+
+.contact-info_email p a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  .contact-info_email p a:hover {
+    text-decoration: underline;
+    color: #ba0015; }
+
+.contact-info_social p a {
+  font-size: 20px;
+  margin-right: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  .contact-info_social p a:last-of-type {
+    margin-right: 0; }
+  .contact-info_social p a:hover {
+    color: #ba0015; }
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
