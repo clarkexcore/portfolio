@@ -457,6 +457,13 @@ nav {
   .project-card_text p {
     line-height: 25px; }
 
+.project-card_text p a {
+  text-decoration: underline;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .project-card_text p a:hover {
+    color: #ba0015; }
+
 .inverted-text {
   text-align: right; }
   .inverted-text .title-line_small {

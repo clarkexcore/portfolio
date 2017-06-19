@@ -78,6 +78,14 @@
 	}
 }
 
+.project-card_text p a{
+	text-decoration: underline;
+	transition: all 0.3s;
+	&:hover{
+		color: $darkRed;
+	}
+}
+
 .inverted-text{
 	text-align: right;
 	.title-line_small{
